@@ -30,13 +30,38 @@
             <h2>Welcome to Telecotable</h2> 
             <h2 style="margin-top: 80px;"> CodeVision CMS – Smart Website & Content Management</h2>
             <br>
-            <p style="padding: 50px; font-size: 30px; margin-top: -50px;">A powerful, user-friendly Content Management System (CMS) that allows businesses to manage websites efficiently.</p>
+
+            <p id="demo" style="padding: 50px; font-size: 30px; margin-top: -50px;"></p>
+
+            <script>
+                var i = 0;
+                var txt = 'A powerful, user-friendly Content Management System (CMS) that allows businesses to manage websites efficiently.';
+                var speed = 50;
+                
+                function typeWriter() 
+                {
+                  if (i < txt.length) 
+                  {
+                    document.getElementById("demo").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                  }
+                }
+
+                typeWriter();
+
+            </script>
+
+
+
+
+            
             <p style="padding: 50px; font-size: 30px; margin-top: -50px;">✅ Drag-and-drop website builder</p>
             <p style="padding: 50px; font-size: 30px; margin-top: -130px;">✅ SEO-optimized tools</p>
             <p style="padding: 50px; font-size: 30px; margin-top: -130px;">✅ Secure and scalable hosting</p>
             <p style="padding: 50px; font-size: 30px; margin-top: -130px;">✅ Cloud & AI Integration – Future-ready business automation</p>
 
-
+            
             
             
         </div>
